@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+prefHeight="350" prefWidth="350"
+fx:controller="controller.JoinController">
+
+<VBox alignment="CENTER">
+	<padding>
+		<Insets top="30" right="20" bottom="50" left="20"/>
+	</padding>
+	<spacing>5</spacing>
+	<children>
+		<Label text="직 원 등 록"/>
+		<Separator prefHeight="30" prefWidth="330"/>
+		<Label text="※직원코드는 숫자로만 입력하세요. (최대 6자)"/>
+	</children>
+	
+	
+	<HBox>
+	<padding>
+		<Insets top="20" left="40"/>
+	</padding>
+		<spacing>62</spacing>
+		<Label text="구분 : "/>
+		<ComboBox fx:id="cbEsection" promptText="선택" prefWidth="80"/>
+	</HBox>
+	
+	<HBox>
+	<padding>
+		<Insets top="10" left="40"/>
+	</padding>
+		<spacing>62</spacing>
+		<Label text="이름 : "/>
+		<TextField fx:id="txtEname" prefWidth="100"/>
+	</HBox>
+	
+	<HBox>
+	<padding>
+		<Insets top="10" left="40"/>
+	</padding>
+	<spacing>37</spacing>
+	<Label text="직원코드 : "/>
+	<TextField fx:id="txtEcode" prefWidth="100"/>
+	<Button fx:id="btnOverlap">중복확인</Button>
+	</HBox>
+	
+	<HBox>
+	<padding>
+		<Insets top="10" left="40"/>
+	</padding>
+	<spacing>37</spacing>
+	<Label text="비밀번호 : "/>
+	<PasswordField fx:id="pwEpasswd" prefWidth="150"/>
+	</HBox>
+	
+	<HBox>
+	<padding>
+		<Insets top="10" left="40"/>
+	</padding>
+	<spacing>10</spacing>
+	<Label text="비밀번호 확인 : "/>
+	<PasswordField fx:id="pwEpasswdOk" prefWidth="150"/>
+	</HBox>
+	
+	<HBox>
+	<padding>
+		<Insets top="10" left="40"/>
+	</padding>
+	<spacing>10</spacing>
+	<Label text="입사일 :           "/>
+	<DatePicker fx:id="dpEnter"/>
+	</HBox>
+	
+	<HBox alignment="CENTER">
+	<padding>
+		<Insets top="35"/>
+	</padding>
+	<spacing>15</spacing>
+	<Button fx:id="btnRegisterOk">등록</Button>
+	<Button fx:id="btnExit">닫기</Button>
+	</HBox>
+	
+</VBox>
+	
+</AnchorPane>
+

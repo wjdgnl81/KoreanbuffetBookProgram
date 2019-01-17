@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+	<padding>
+		<Insets bottom="10.0" left="20.0" right="20.0" top="20.0"/>
+	</padding>
+	<center>
+		<Label text="매출 목록에 포함할 그래프 이미지 선택"/>
+		<HBox alignment="CENTER" spacing="20.0">
+			<CheckBox id="cbMonthImage" text="월 매출" userData="month"></CheckBox>
+			<CheckBox id="cbQuqrterImage" text="분기별 매출" userData="quarter"></CheckBox>
+		</HBox>
+	</center>
+	
+	<bottom>
+		<HBox alignment="CENTER" spacing="20.0">
+		<padding>
+			<Insets top="10"/>
+		</padding>
+			<Button id="btnPdfSave" text="확인"/>
+		</HBox>
+	</bottom>
+</BorderPane>
+
